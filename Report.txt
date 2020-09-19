@@ -1,0 +1,72 @@
+->Project:
+
+	->The aim of the project was to implement a personal diary with the following features:
+		->Basic:
+			->Login with username and password
+			->Create an account
+			->Set date of a page by selecting from calendar
+			->Set a title for a page
+			->Give an option to choose the background color from the given options
+			->Choose color and size of the text
+			->Choose mood of the day
+		->Advanced:
+			->Allow user to add a photo/video
+			->Keep an emoji to set the mood of the day
+			->Use emoji in writing the diary
+			->Keep text Bold/Italic
+			->Set a bookmark for a certain date 
+
+->Implementation Details:
+
+	-> After running the main.py it will display the login screen
+		->If you have already created an account you can type the username and password
+			->If the username and password are valid you will be taken to the Home screen
+			->If the username and password are not valid you will still be in the login screen
+		->If you want to create a new account, you can click on the signin button which takes you to the signin screen
+			->Type the username and password and if the username already exists you will still be in the signin screen
+			->If you type valid username and a password and click on signin you will be taken to the home screen
+			->You can click on back button if you want to go back to the login screen
+
+	->Home Screen:
+		->If you click on the Open Notes button it will take you to the Diary screen
+		->If you click on the Logout button it will take you to the Login screen again
+
+	->Diary Screen: 
+		->It will display all the notes which the user has made or added to the diary and clicking on any one of them will take you to that note's screen
+		->If you want to create a new note you can click on the Add new note button which will take you to the add new note screen
+
+	->Add new note Screen:
+		->You can write what the title of the note is
+		->Write the text you want to add to the note
+		->You can type the date or click on the calendar button to select a date
+		->Select your mood from the options which appear when you click on the Select your mood button
+		->Select the text size you want (default size = 20)
+		->Select the text color you want (default color = white)
+		->Select the background image( Don't leave this unfilled, please do select one from the given images)
+		->Click on done to create the note
+		->Click on back if you don't want to save this note
+
+	->Note Screen:
+		->It will display the respective note with the following content:
+			->Title: Title of the note
+			->Body: Text added to the note
+			->Mood: Selected mood while writing the note
+			->Date: Selected date
+			->with selected text size, text color, and background image
+		->Click on delete button if you want to delete this note
+		->Clicking on the back button takes you to the Diary Screen.
+
+Major Difficulties faced:
+	
+	->How to show another screen after clicking a button present on the existing screen
+	->How to display all the notes which the current user has written on the Diary Screen
+	->How to display a calendar so that user can choose a date from the calendar and getting the date selected in the calendar to the required format and place
+	->Changing the background color of a label widget
+
+Learning Outcomes:
+
+  I've learnt how to -->
+	->Switch between multiple screens by using the ScreenManger and Screen classes
+	->Create, access and delete a file/directory using python
+	->Use KivyCalendar to display a popup calendar and get the date selected in that calendar
+	->Change color,size of text and background color,background image,size,position of a label/button in kivy

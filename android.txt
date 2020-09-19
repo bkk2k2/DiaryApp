@@ -1,0 +1,3 @@
+title=Diary App
+author=Karthikeya Battepati
+orientation=portrait
